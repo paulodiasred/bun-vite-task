@@ -1,0 +1,13 @@
+.main-container {
+  min-height: 80vh;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+}
+
+.logo-maior {
+  width: 150px;
+  height: 35px;
+}

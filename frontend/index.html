@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scraper de Produtos da Amazon</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div>
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="./src/assets/logo.png"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="me-2"
+            />
+            Amazon Scraper
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <span class="text-white me-3">By Paulo Dias</span>
+          <a
+            href="https://paulodias.dev"
+            target="_blank"
+            class="btn btn-outline-light"
+          >
+            paulodias.dev
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="container d-flex flex-column align-items-center justify-content-center"
+      style="min-height: 80vh;"
+    >
+      <div class="row">
+        <div class="col text-center mt-4">
+          <h1>Scraper de Produtos da Amazon</h1>
+          <p class="text-muted">
+            Pesquise produtos e veja título, avaliação, número de reviews e
+            imagem.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center w-100">
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="keyword"
+              placeholder="Digite a palavra-chave"
+              aria-label="Digite a palavra-chave"
+            />
+            <button class="btn btn-primary" id="scrapeButton" type="button">
+              Buscar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row w-100" id="results">
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

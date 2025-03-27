@@ -1,4 +1,5 @@
 # Amazon Scraper Project by Paulo Dias
+![Tela](https://github.com/paulodiasred/bun-vite-task/blob/main/frontend/src/assets/tela1.png)
 
 This project is a simple web application that scrapes product listings from Amazon and displays them in a nice interface. It has two parts: a backend and a frontend.
 
